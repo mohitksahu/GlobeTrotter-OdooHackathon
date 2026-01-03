@@ -14,6 +14,12 @@ const CreateTrip = () => {
     endDate: ''
   });
 
+  const env = import.meta.env.VITE_ENV || 'prod';
+  if (env !== 'dev' && !isAuthenticated) {
+    navigate('/login');
+    return null;
+  }
+
   const handleChange = (e) => {
     setFormData(prev => ({
       ...prev,
