@@ -13,10 +13,12 @@ const createTable = async () => {
     CREATE TABLE IF NOT EXISTS budgets (
       id SERIAL PRIMARY KEY,
       trip_id INTEGER UNIQUE NOT NULL REFERENCES trips(id) ON DELETE CASCADE,
-      total_cost DECIMAL(10, 2) DEFAULT 0.00,
+      total_budget DECIMAL(10, 2) DEFAULT 0.00,
+      currency VARCHAR(10) DEFAULT 'USD',
+      notes TEXT,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-      CONSTRAINT valid_budget_cost CHECK (total_cost >= 0)
+      CONSTRAINT valid_budget_cost CHECK (total_budget >= 0)
     );
 
     CREATE INDEX IF NOT EXISTS idx_budgets_trip_id ON budgets(trip_id);

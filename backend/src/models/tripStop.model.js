@@ -17,6 +17,7 @@ const createTable = async () => {
       country VARCHAR(100),
       start_date DATE NOT NULL,
       end_date DATE NOT NULL,
+      order_index INTEGER DEFAULT 0,
       notes TEXT,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

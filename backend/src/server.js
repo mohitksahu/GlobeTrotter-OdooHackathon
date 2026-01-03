@@ -11,6 +11,7 @@ const tripModel = require('./models/trip.model');
 const tripStopModel = require('./models/tripStop.model');
 const activityModel = require('./models/activity.model');
 const budgetModel = require('./models/budget.model');
+const userProfileModel = require('./models/userProfile.model');
 
 /**
  * Initialize database tables
@@ -19,6 +20,7 @@ const initializeDatabase = async () => {
   try {
     console.log('Initializing database...');  // Changed to plain text
     await userModel.createTable();
+    await userProfileModel.createTable();
     await tripModel.createTable();
     await tripStopModel.createTable();
     await activityModel.createTable();

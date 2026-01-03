@@ -17,6 +17,7 @@ const createTable = async () => {
       description TEXT,
       start_date DATE NOT NULL,
       end_date DATE NOT NULL,
+      visibility VARCHAR(50) DEFAULT 'private',
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       CONSTRAINT valid_dates CHECK (end_date >= start_date)

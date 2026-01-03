@@ -16,12 +16,13 @@ const createTable = async () => {
       name VARCHAR(255) NOT NULL,
       description TEXT,
       cost DECIMAL(10, 2) DEFAULT 0.00,
-      duration_hours DECIMAL(5, 2) DEFAULT 0,
-      category VARCHAR(50),
+      duration_minutes INTEGER DEFAULT 0,
+      activity_type VARCHAR(50),
+      scheduled_at TIMESTAMP,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       CONSTRAINT valid_cost CHECK (cost >= 0),
-      CONSTRAINT valid_duration CHECK (duration_hours >= 0)
+      CONSTRAINT valid_duration CHECK (duration_minutes >= 0)
     );
 
     CREATE INDEX IF NOT EXISTS idx_activities_trip_stop_id ON activities(trip_stop_id);
