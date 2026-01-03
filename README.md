@@ -1,4 +1,4 @@
-# GlobeTrotter - Travel Planning Web Application
+# GlobeTrotter - Travel Planning Web Application - By Team EdgeHackers
 
 A production-grade travel planning web application built with the MERN stack (React + Node.js + Express + PostgreSQL). Designed and implemented for Odoo hiring hackathon evaluation.
 
