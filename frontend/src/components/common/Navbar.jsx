@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import '../styles/navbar.css';
+import '../../styles/navbar.css';
 
 export const Navbar = () => {
   const { isAuthenticated, user, logout } = useAuth();

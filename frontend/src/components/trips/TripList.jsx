@@ -5,7 +5,7 @@
 
 import React from 'react';
 import TripCard from './TripCard';
-import '../styles/trip-list.css';
+import '../../styles/trip-list.css';
 
 export const TripList = ({ trips, onDelete, loading }) => {
   if (loading) {

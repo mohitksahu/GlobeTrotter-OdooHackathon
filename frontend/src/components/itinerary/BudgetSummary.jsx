@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import '../styles/budget-summary.css';
+import '../../styles/budget-summary.css';
 
 export const BudgetSummary = ({ budget, tripDays }) => {
   const totalCost = parseFloat(budget?.total_cost || 0);

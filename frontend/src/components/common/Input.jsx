@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import '../styles/input.css';
+import '../../styles/input.css';
 
 export const Input = ({
   type = 'text',

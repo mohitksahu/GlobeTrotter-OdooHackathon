@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/trip-card.css';
+import '../../styles/trip-card.css';
 
 export const TripCard = ({ trip, onDelete }) => {
   const startDate = new Date(trip.start_date).toLocaleDateString();

@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import '../styles/stop-card.css';
+import '../../styles/stop-card.css';
 
 export const StopCard = ({ stop, activities, onAddActivity, onDeleteStop }) => {
   const startDate = new Date(stop.start_date).toLocaleDateString();

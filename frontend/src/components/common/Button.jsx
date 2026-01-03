@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import '../styles/button.css';
+import '../../styles/button.css';
 
 export const Button = ({ 
   children, 

@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import Input from '../common/Input';
 import Button from '../common/Button';
-import '../styles/trip-form.css';
+import '../../styles/trip-form.css';
 
 export const TripForm = ({ onSubmit, loading = false, initialData = null }) => {
   const [formData, setFormData] = useState({

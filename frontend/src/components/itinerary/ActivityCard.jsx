@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import '../styles/activity-card.css';
+import '../../styles/activity-card.css';
 
 export const ActivityCard = ({ activity, onEdit, onDelete }) => {
   return (
